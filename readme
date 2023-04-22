@@ -1,0 +1,14 @@
+1. Create the directory 'backend'.
+2. Inside 'backend' start the project first by initializing it as npm project by :
+-> npm init (configure whatever things are being asked)
+3. Install the required modules (dependencies/frameworks/libraries) by :
+-> npm install
+For Example : To install the following : express, mongoose, cors, nodemon, dotenv use the command :
+-> npm install express mongoose cors nodemon dotenv
+4. Create '.env' file and add the PORT which will listen to our reqests.
+5. Go to 'package.json' and edit the scripts, add/update a script with key 'start' and value 'nodemon app.js'
+6. Create a Mongo DB for our application by following :
+ go to 'https://cloud.mongodb.com/' (Mongo Atlas) -> then 'Create Project' -> You will get a warning which is like 'Current IP Address not added. You will not be able to connect to databases from this address.', so click on 'Add Current IP Address'
+7. Then 'Create Database' : Choose the region, create a username, password for authentication of any connection. For our Project : 
+ NOTE : For this cluster : cluster name -> InitialCluster, username -> dubeykeshav98, password -> kecY11YoOfXWirQv
+8. Then to connect mongo db cluster with our application, click on 'Connect' -> 'Connect your application' -> copy the URL provided and add it to the env file.
